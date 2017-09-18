@@ -131,6 +131,9 @@ public class RecipeBootstrap implements ApplicationListener<ContextRefreshedEven
                 "Read more: http://www.simplyrecipes.com/recipes/perfect_guacamole/#ixzz4jvoun5ws");
 
         guacRecipe.setNotes(guacNotes);
+        guacRecipe.setUrl("http://www.simplyrecipes.com/");
+        guacRecipe.setServings(4);
+        guacRecipe.setSource("Simply Recipes");
 
         guacRecipe.addIngredient(new Ingredient("ripe avocados", new BigDecimal(2), eachUom));
         guacRecipe.addIngredient(new Ingredient("Kosher salt", new BigDecimal(".5"), teaspoonUom));
